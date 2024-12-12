@@ -29,10 +29,9 @@ public class PlayerController : MonoBehaviour
 
     #region Ground Checking
     [SerializeField] Transform groundCheck;
-    [SerializeField] float groundDistance = 2.0f;//Chnaged on 10/06/21 from 4.0f to 2.0f
+    [SerializeField] float groundDistance = 2.0f;
     public LayerMask groundMask;
-    //bool isGrounded = true; //Commented on 10/06/21 sandbox 6 slide 4
-    bool IsGrounded { get; set; } //Added on 10/06/21 sandbox 6 slide 4
+    bool IsGrounded { get; set; } 
     #endregion
 
     // Start is called before the first frame update
@@ -46,20 +45,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Commented on 10/06/21 sandbox 6 slide 4
-        /*isGrounded = Physics.CheckSphere(
-            groundCheck.position,
-            groundDistance,
-            groundMask);*/
-        
-        CheckGround();//Added on 10/06/21 sandbox 6 slide 4
+        CheckGround();
         Move();
         Jump();
         Rotate();
         //Debug.Log(Time.deltaTime);
     }
 
-    //Added on 10/06/21 sandbox 6 slide 4
     void CheckGround()
     {
         IsGrounded = Physics.CheckSphere(
@@ -90,7 +82,6 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        //Cghanged isGrounded to IsGounded on 10/06/21
         if (jumpControl.action.triggered && IsGrounded)
         {
             jumpVelocity.y = Mathf.Sqrt(-3.0f * jumpHeight * gravityScale * Physics.gravity.y);
