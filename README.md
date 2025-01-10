@@ -1,5 +1,5 @@
 # The Food Game
-The Food Game is a personal project developed using Unity to showcase my skills in game development. The objective of the game is to collect healthy food items while avoiding unhealthy ones, with a time limit of 15 seconds. This project demonstrates my ability to design, program, and implement basic game mechanics in Unity.
+The Food Game is a personal project developed using <a href="https://unity.com/" target="_blank">Unity</a> to showcase my skills in game development. The objective of the game is to collect healthy food items while avoiding unhealthy ones, with a time limit of 15 seconds. This project demonstrates my ability to design, program, and implement basic game mechanics in Unity.
 
 * Game Details/ Functionality :
   * The game features a player character placed in an open field, with various food items falling from the sky.
@@ -14,7 +14,7 @@ The Food Game is a personal project developed using Unity to showcase my skills 
   * Losing Condition: The player loses if the number of unhealthy food items collected surpasses the healthy food items.
 * Technical Stack:
   * Programming Language: C#
-  * Tools : Unity, Visual Studio Code, Mixamo, Git bash
+  * Tools : Unity, Visual Studio Code, <a href="https://www.mixamo.com/" traget="_blank">Mixamo</a>, Git bash
 * Scripts:
  <table>
   <thead>
